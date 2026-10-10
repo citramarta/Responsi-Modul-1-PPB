@@ -55,10 +55,11 @@ Tabel loans:
 | return_date   | date        | Tanggal pengembalian, null jika belum dikembalikan   |
 | status        | text        | Dipinjam atau Dikembalikan (default Dipinjam)  	     |
 | created_at    | timestamptz | Waktu data dibuat                                    |
-Catatan status: database hanya menyimpan "Dipinjam" dan "Dikembalikan". Pada respons API, peminjaman berstatus "Dipinjam" yang due_date nya sudah lewat ditampilkan sebagai "Terlambat" yang dihitung otomatis dan tidak dapat diisi manual.
+
+Catatan: database hanya menyimpan "Dipinjam" dan "Dikembalikan". Pada respons API, peminjaman berstatus "Dipinjam" yang due_date nya sudah lewat ditampilkan sebagai "Terlambat" yang dihitung otomatis dan tidak dapat diisi manual.
 
 **Skema SQL** untuk membuat tabel:
-CREATE TABLE loans (
+CREATE TABLE loans (  
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     member_name VARCHAR(100) NOT NULL,
     member_number VARCHAR(30) NOT NULL,
@@ -87,6 +88,7 @@ CREATE TABLE loans (
 | status        | /loans?status=Terlambat      | `Dipinjam`, `Dikembalikan`, atau `Terlambat`   |
 | member_number | /loans?member_number=AGT-001 | Peminjaman milik anggota tertentu              |
 | q             | /loans?q=laskar              | Cari pada nama anggota atau judul buku         |
+
 Filter dapat dikombinasikan, misalnya /loans?status=Terlambat&member_number=AGT-001.
 
 **Contoh Request & Response**
