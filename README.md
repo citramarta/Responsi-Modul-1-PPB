@@ -4,7 +4,7 @@ REST API sederhana untuk layanan pencatatan peminjaman buku perpustakaan menggun
 
 ## Deskripsi Umum
 
-library loan API adalah sistem untuk mencatat dan mengelola data peminjaman buku oleh anggota perpustakaan. Melalui API ini, petugas dapat menambah data peminjaman, melihat daftar peminjaman, memperbarui data (misalnya mencatat pengembalian buku), dan menghapus data peminjaman.
+Library Loan API adalah sistem untuk mencatat dan mengelola data peminjaman buku oleh anggota perpustakaan. Melalui API ini, petugas dapat menambah data peminjaman, melihat daftar peminjaman, memperbarui data (misalnya mencatat pengembalian buku), dan menghapus data peminjaman.
 
 ## Tujuan proyek
 
