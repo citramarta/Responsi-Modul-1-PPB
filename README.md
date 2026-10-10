@@ -25,21 +25,24 @@ REST API sederhana untuk layanan pencatatan peminjaman buku perpustakaan menggun
 | Pengujian  | Postman               |
 
 **Struktur Folder**
+```
 perpustakaan_citra_responsi/
 ├── src/
 │   ├── config/
-│   │   └── supabaseClient.js   
+│   │   └── supabaseClient.js  
 │   ├── models/
-│   │   └── loanModel.js        
+│   │   └── loanModel.js       
 │   ├── controllers/
-│   │   └── loanController.js   
+│   │   └── loanController.js  
 │   ├── routes/
-│   │   └── loanRoutes.js       
+│   │   └── loanRoutes.js      
 │   └── index.js                
 ├── .env.example
 ├── .gitignore
 ├── package.json
-└── vercel.json              
+├── vercel.json
+└── README.md
+```             
 
 **Struktur Data/Schema**
 Tabel loans:
@@ -58,6 +61,7 @@ Tabel loans:
 Catatan: database hanya menyimpan "Dipinjam" dan "Dikembalikan". Pada respons API, peminjaman berstatus "Dipinjam" yang due_date nya sudah lewat ditampilkan sebagai "Terlambat" yang dihitung otomatis dan tidak dapat diisi manual.
 
 **Skema SQL** untuk membuat tabel:
+``` 
 CREATE TABLE loans (  
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     member_name VARCHAR(100) NOT NULL,
@@ -70,6 +74,7 @@ CREATE TABLE loans (
         CHECK (status IN ('Dipinjam', 'Dikembalikan', 'Terlambat')),
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
+``` 
 
 **Daftar Endpoint**
 | Method      | Endpoint   | Deskripsi                                  |
