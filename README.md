@@ -25,22 +25,21 @@ REST API sederhana untuk layanan pencatatan peminjaman buku perpustakaan menggun
 | Pengujian  | Postman               |
 
 **Struktur Folder**
-|perpustakaan_citra_responsi/    |
-||── src/                        |
-|│   ├── config/                 |
-|│   │   └── supabaseClient.js   |
-|│   ├── models/                 |
-|│   │   └── loanModel.js        |
-|│   ├── controllers/            |
-|│   │   └── loanController.js   |
-|│   ├── routes/                 |
-|│   │   └── loanRoutes.js       |
-|│   └── index.js                |
-|├── .env.example                |
-|├── .gitignore                  |
-|├── package.json                |
-|├── vercel.json                 |
-|└── README.md                   |
+perpustakaan_citra_responsi/
+├── src/
+│   ├── config/
+│   │   └── supabaseClient.js   
+│   ├── models/
+│   │   └── loanModel.js        
+│   ├── controllers/
+│   │   └── loanController.js   
+│   ├── routes/
+│   │   └── loanRoutes.js       
+│   └── index.js                
+├── .env.example
+├── .gitignore
+├── package.json
+└── vercel.json              
 
 **Struktur Data/Schema**
 Tabel loans:
