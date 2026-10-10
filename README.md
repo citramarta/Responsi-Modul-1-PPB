@@ -25,22 +25,22 @@ REST API sederhana untuk layanan pencatatan peminjaman buku perpustakaan menggun
 | Pengujian  | Postman               |
 
 **Struktur Folder**
-perpustakaan_citra_responsi/
-├── src/
-│   ├── config/
-│   │   └── supabaseClient.js   
-│   ├── models/
-│   │   └── loanModel.js        
-│   ├── controllers/
-│   │   └── loanController.js   
-│   ├── routes/
-│   │   └── loanRoutes.js       
-│   └── index.js                
-├── .env.example
-├── .gitignore
-├── package.json
-├── vercel.json
-└── README.md
+|perpustakaan_citra_responsi/    |
+||── src/                        |
+|│   ├── config/                 |
+|│   │   └── supabaseClient.js   |
+|│   ├── models/                 |
+|│   │   └── loanModel.js        |
+|│   ├── controllers/            |
+|│   │   └── loanController.js   |
+|│   ├── routes/                 |
+|│   │   └── loanRoutes.js       |
+|│   └── index.js                |
+|├── .env.example                |
+|├── .gitignore                  |
+|├── package.json                |
+|├── vercel.json                 |
+|└── README.md                   |
 
 **Struktur Data/Schema**
 Tabel loans:
@@ -212,16 +212,20 @@ Yang diperlukan: vs code, node.js, supabase, postman (untuk pengujian), web brow
 **1. Clone repository**
 git clone https://github.com/<username>/<nama-repository>.git
 cd <nama-repository>
+
 **2. Install dependensi**
 npm install
+
 **3. Buat database Supabase**
 a. Buat proyek baru di Supabase.
 b. Buka SQL Editor lalu klik New query, masukkan skema SQL pada bagian, lalu klik Run.
 c. Ambil kredensial dari **Project Settings**: **Project URL** (menu *Data API*) dan anon public key (menu API Keys).
+
 **4. Konfigurasi env**
 SUPABASE_URL=https://xxxxxxxxxxxx.supabase.co (isi sesuai di supabase)
 SUPABASE_KEY=isi sesuai di supabase
 PORT=3000 
+
 **5. Jalankan server**
 lalu jalankan dengan npm run dev 
 Jika berhasil, terminal menampilkan "Server running on port 3000". Buka "http://localhost:3000/loans" untuk menguji.
