@@ -300,9 +300,7 @@ PORT=3000
 
 ### 5. Jalankan server
 
-lalu jalankan dengan `npm run dev`
-
-Jika berhasil, terminal menampilkan "Server running on port 3000". Buka `http://localhost:3000/loans` untuk menguji.
+lalu jalankan dengan `npm run dev`. Jika berhasil, terminal menampilkan "Server running on port 3000". Buka `http://localhost:3000/loans` untuk menguji.
 
 ## Deployment ke Vercel
 
@@ -314,4 +312,4 @@ Jika berhasil, terminal menampilkan "Server running on port 3000". Buka `http://
 
 ## Link Hasil Deployment
 
-URL: `https://<nama-project>.vercel.app`
+URL: `https://responsi-modul-1-ppb-f4k5.vercel.app/`
