@@ -1,4 +1,4 @@
-# Library Loan API
+**Library Loan API**
 
 REST API sederhana untuk layanan pencatatan peminjaman buku perpustakaan menggunakan Node.js, Express.js, dan Supabase (PostgreSQL), dan di-deploy ke Vercel.
 
